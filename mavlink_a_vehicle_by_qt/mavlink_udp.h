@@ -1,3 +1,10 @@
+/*
+ * File name: mavlink_udp.h
+ * Purpose: Simulate a vehicle which connects to QGC via MAVLink over UDP socket.
+ * Creating Date: 2019.11.29
+ * Author/Charge: Panda Wang (lucky00122@gmail.com)
+ * Note: N/A
+ */
 //#pragma once
 
 #ifndef MAVLINK_UDP_H
@@ -94,7 +101,7 @@ class mavlink_udp : public QThread
 	Q_OBJECT
 		
 public:
-	mavlink_udp(): _socket(NULL), _mutex(NULL), _threadSender(NULL){}
+    mavlink_udp(): _socket(NULL), _mutex(NULL), _threadSender(NULL){}
 	~mavlink_udp(){}
 	
 	void udpInit(void);

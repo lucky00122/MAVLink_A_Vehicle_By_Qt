@@ -1,3 +1,10 @@
+/*
+ * File name: mavlink_udp.cc
+ * Purpose: Simulate a vehicle which connects to QGC via MAVLink over UDP socket.
+ * Creating Date: 2019.12.04
+ * Author/Charge: Panda Wang (lucky00122@gmail.com)
+ * Note: N/A
+ */
 #include "mavlink_udp.h"
 
 void mavlink_udp::udpInit(void)
